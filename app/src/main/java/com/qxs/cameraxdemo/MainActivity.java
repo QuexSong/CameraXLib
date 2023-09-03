@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initCompat(){
-        TakeCameraXCompat mTakeCameraXCompat = new TakeCameraXCompat(this){
+         mTakeCameraXCompat = new TakeCameraXCompat(this){
             @Override
             public void onPermissionsDenied(List<String> perms) {
                 super.onPermissionsDenied(perms);

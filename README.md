@@ -31,6 +31,15 @@ dependencies{
 public class MainActivity extends AppCompatActivity {
     private TakeCameraXCompat mTakeCameraXCompat;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        //初始化兼容类
+        initCompat();
+    }
+
     /**
      * 在onCreate中初始化兼容类
      */
