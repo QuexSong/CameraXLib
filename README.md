@@ -25,7 +25,7 @@ dependencies{
 }
 ```
 
-## 调用方法 请参考Demo中 MediaActivity
+## 调用方法 请参考Demo中 MainActivity
 注：需要在onCreate中创建兼容类
 ```java
 public class MainActivity extends AppCompatActivity {
